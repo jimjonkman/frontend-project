@@ -1,0 +1,53 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.title {
+    font-size: 5em;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    font-size: 2em;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-button {
+    font-size: 1.5em;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover { 
+    background-color: lightblue;
+}
+
+
+section:last-of-type {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 300px;
+    margin-bottom: 20px;
+}
