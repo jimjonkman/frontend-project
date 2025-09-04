@@ -38,7 +38,7 @@ button:hover {
 
 section:last-of-type {    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -53,10 +53,19 @@ section:last-of-type {
 }
 
 .quiz-button {
-    height: 50px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 5px;
-}
+    margin: 0 50px;
+    background-color: rgb(95, 159, 243);
+    }
+
+    .subtitle {
+        font-size: 3em;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
