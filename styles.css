@@ -71,12 +71,11 @@ button:hover {
     }
 .quiz-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
     margin: 50px auto;
-    max-width: 600px;
 }
 
 
@@ -99,3 +98,11 @@ button:hover {
 .answer-button:hover { 
     background-color: lightblue;
 }
+
+.subtitle_question {
+        font-size: 2em;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
