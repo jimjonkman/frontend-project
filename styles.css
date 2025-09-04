@@ -36,9 +36,9 @@ button:hover {
 }
 
 
-section:last-of-type {    
+.invoer-container {    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
