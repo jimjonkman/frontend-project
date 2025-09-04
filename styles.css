@@ -53,8 +53,8 @@ button:hover {
 }
 
 .quiz-button {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -69,3 +69,14 @@ button:hover {
         align-items: center;
         justify-content: center;
     }
+.quiz-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    border: 0.5px solid black;
+}
