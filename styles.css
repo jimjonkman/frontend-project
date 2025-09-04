@@ -36,9 +36,9 @@ button:hover {
 }
 
 
-.invoer-container {    
+section:last-of-type {    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -60,8 +60,6 @@ button:hover {
     display: inline-block;
     margin: 0 50px;
     background-color: rgb(95, 159, 243);
-    font-size: 3em;
-    border: 0.5px solid black;
     }
 
     .subtitle {
@@ -71,12 +69,3 @@ button:hover {
         align-items: center;
         justify-content: center;
     }
-
-.quiz-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 50px;
-}
