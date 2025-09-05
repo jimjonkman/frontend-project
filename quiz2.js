@@ -21,7 +21,7 @@ const quizData = [
     },
     {
         question: "Wat is een populair Italiaans gerecht dat bestaat uit een dunne, ronde bodem belegd met tomaat, kaas en diverse ingrediënten?",
-        answers: ["A: Pizza", "B: Pasta", "C: Risotto", "D: Lasagne"],
+        answers: ["A: Risotto", "B: Pasta", "C: Pizza", "D: Lasagne"],
         correct: "C"
     }
 ];
