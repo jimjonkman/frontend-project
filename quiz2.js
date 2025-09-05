@@ -1,27 +1,27 @@
 const quizData = [
     {
-        question: "vraag1: Welke letter is correct?",
-        answers: ["A: Optie 1", "B: Optie 2", "C: Optie 3", "D: Optie 4"],
+        question: "Uit welk land komt Pizza?",
+        answers: ["A: Indonesië", "B: Italië", "C: Nederland", "D: Amerika"],
         correct: "B"
     },
     {
-        question: "vraag2: Welke letter is correct?",
-        answers: ["A: Optie 1", "B: Optie 2", "C: Optie 3", "D: Optie 4"],
-        correct: "D"
-    },
-    {
-        question: "vraag3: Welke letter is correct?",
-        answers: ["A: Optie 1", "B: Optie 2", "C: Optie 3", "D: Optie 4"],
+        question: "Welk gerecht wordt traditioneel gegeten tijdens Thanksgiving in de Verenigde Staten?",
+        answers: ["A: Kalkoen", "B: Ham", "C: Beef Wellington", "D: Lasagne"],
         correct: "A"
     },
     {
-        question: "vraag4: Welke letter is correct?",
-        answers: ["A: Optie 1", "B: Optie 2", "C: Optie 3", "D: Optie 4"],
+        question: "Wat is een traditioneel Japans gerecht dat bestaat uit rauwe vis en rijst?",
+        answers: ["A: Sashimi", "B: Ramen", "C: Tempura", "D: Sushi"],
+        correct: "D"
+    },
+    {
+        question: "Wat is een populair Mexicaans gerecht dat bestaat uit een tortilla gevuld met vlees, bonen en kaas?",
+        answers: ["A: Tacos", "B: Burritos", "C: Enchiladas", "D: Quesadillas"],
         correct: "B"
     },
     {
-        question: "vraag5: Welke letter is correct?",
-        answers: ["A: Optie 1", "B: Optie 2", "C: Optie 3", "D: Optie 4"],
+        question: "Wat is een populair Italiaans gerecht dat bestaat uit een dunne, ronde bodem belegd met tomaat, kaas en diverse ingrediënten?",
+        answers: ["A: Pizza", "B: Pasta", "C: Risotto", "D: Lasagne"],
         correct: "C"
     }
 ];
