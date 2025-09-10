@@ -29,7 +29,6 @@ const quizData = [
 let currentQuestion = 0;
 let score = 0;
 
-// Selecteer de vraagtekst en ALLE antwoordknoppen
 const questionElement = document.querySelector(".subtitle_question");
 const answerButtons = document.querySelectorAll(".answer-button");
 
