@@ -8,9 +8,9 @@ quiz1: [
 
 // ICT vragen
 quiz2: [
-    { question: "Wat betekent de afkorting 'CPU'?", answers: ["A: Computer Power Unit", "B: Central Processing Unit", "C: Control Program Utility", "D: Computer Program Unit"], correct: "B" },
-    { question: "Welke programmeertaal wordt vaak gebruikt voor webpagina's?", answers: ["A: Java", "B: Python", "C: JavaScript", "D: C++"], correct: "C" },
-    { question: "Wat is een voorbeeld van een besturingssysteem?", answers: ["A: Windows", "B: Excel", "C: Photoshop", "D: Chrome"], correct: "A" }
+    { question: "Welke programmeertaal wordt vaak gebruikt voor het bouwen van websites?", answers: ["A: Python", "B: JavaScript", "C: C#", "D: Java"], correct: "B" },
+    { question: "Wat betekent HTML?", answers: ["A: HyperText Markup Language", "B: High Tech Machine Learning", "C: Home Tool Markup Language", "D: Hyperlink Text Management Language"], correct: "A" },
+    { question: "Welke tag gebruik je in HTML om een link te maken?", answers: ["A: <img>", "B: <a>", "C: <link>", "D: <href>"], correct: "B" }
 ],
 
 // Eten vragen
@@ -35,7 +35,7 @@ const answerButtons = document.querySelectorAll(".answer-button");
 
 // Timer variabelen
 let timerInterval;
-let timeLeft = 60;
+let timeLeft = 30;
 let timerDiv;
 
 // Timer alleen tonen op quiz pagina's
@@ -48,7 +48,7 @@ if (quizData && questionElement) {
 }
 
 function startTimer() {
-    timeLeft = 60;
+    timeLeft = 30;
     timerDiv.textContent = `Tijd over: ${timeLeft} seconden`;
     clearInterval(timerInterval);
     timerInterval = setInterval(() => {
