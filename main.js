@@ -1,59 +1,49 @@
-const quizData = [
-    {
-        question: "Uit welk land komt Pizza?",
-        answers: ["A: Indonesië", "B: Italië", "C: Nederland", "D: Amerika"],
-        correct: "B"
-    },
-    {
-        question: "Welk gerecht wordt traditioneel gegeten tijdens Thanksgiving in de Verenigde Staten?",
-        answers: ["A: Kalkoen", "B: Ham", "C: Beef Wellington", "D: Lasagne"],
-        correct: "A"
-    },
-    {
-        question: "Wat is een traditioneel Japans gerecht dat bestaat uit rauwe vis en rijst?",
-        answers: ["A: Sashimi", "B: Ramen", "C: Tempura", "D: Sushi"],
-        correct: "D"
-    },
-    {
-        question: "Wat is een populair Mexicaans gerecht dat bestaat uit een tortilla gevuld met vlees, bonen en kaas?",
-        answers: ["A: Tacos", "B: Burritos", "C: Enchiladas", "D: Quesadillas"],
-        correct: "B"
-    },
-    {
-        question: "Wat is een populair Italiaans gerecht?",
-        answers: ["A: Appeltaart", "B: Bloemkool", "C: Pizza", "D: Stokbrood"],
-        correct: "C"
-    }
-];
+const quizzes = {
+    quiz1: [
+        { question: "vraag1: Welke letter is correct?", answers: ["A: Optie 1", "B: Optie 2", "C: Optie 3", "D: Optie 4"], correct: "B" },
+        // ...other quiz1 questions...
+    ],
+    quiz2: [
+        { question: "Uit welk land komt Pizza?", answers: ["A: Indonesië", "B: Italië", "C: Nederland", "D: Amerika"], correct: "B" },
+        // ...other quiz2 questions...
+    ],
+    quiz3: [
+        { question: "vraag1: Welke letter is correct?", answers: ["A: Optie 1", "B: Optie 2", "C: Optie 3", "D: Optie 4"], correct: "B" },
+        // ...other quiz3 questions...
+    ]
+};
 
+// Detect quiz type from URL
+let quizType = "quiz1";
+if (window.location.pathname.includes("quiz2")) quizType = "quiz2";
+if (window.location.pathname.includes("quiz3")) quizType = "quiz3";
+
+const quizData = quizzes[quizType];
 let currentQuestion = 0;
 let score = 0;
 
 const questionElement = document.querySelector(".subtitle_question");
 const answerButtons = document.querySelectorAll(".answer-button");
 
-
 function showQuestion() {
     const q = quizData[currentQuestion];
     questionElement.textContent = q.question;
     answerButtons.forEach((btn, index) => {
         btn.textContent = q.answers[index];
+        btn.style.display = "flex";
     });
 }
 
 answerButtons.forEach(button => {
     button.addEventListener("click", () => {
         const chosen = button.textContent.charAt(0);
-        
         if (chosen === quizData[currentQuestion].correct) {
             score++;
             alert("Correct!");
         } else {
             alert("Incorrect! Het juiste antwoord was: " + quizData[currentQuestion].correct);
         }
-
         currentQuestion++;
-
         if (currentQuestion < quizData.length) {
             showQuestion();
         } else {
@@ -63,4 +53,4 @@ answerButtons.forEach(button => {
     });
 });
 
-showQuestion();
+if (quizData) showQuestion();
