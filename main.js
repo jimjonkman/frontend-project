@@ -86,6 +86,20 @@ function nextQuestion() {
     }
 }
 
+    function saveName() {
+    const name = document.getElementById('NameInput').value.trim();
+    localStorage.setItem('quizName', name);
+    location.href = 'thema.html';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const playerNameElement = document.getElementById('playerName');
+    if (playerNameElement) {
+        const name = localStorage.getItem('quizName') || '';
+        playerNameElement.textContent = name;
+    }
+});
+
 if (quizData && questionElement) {
     showQuestion();
     answerButtons.forEach(button => {
