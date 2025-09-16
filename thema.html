@@ -25,9 +25,11 @@
         </section>
         <h2 class="subtitle"> welke quiz wil je spelen?</h2>
         <section class="quiz-container">
-            <button class="quiz-button" onclick="location.href='quiz1.html'">Sport</button>
-            <button class="quiz-button" onclick="location.href='quiz2.html'">ICT</button>
-            <button class="quiz-button" onclick="location.href='quiz3.html'">Eten</button>
+        <button class="quiz-button" onclick="startQuiz('quiz1')">Quiz 1</button>
+        <button class="quiz-button" onclick="startQuiz('quiz2')">Quiz 2</button>
+        <button class="quiz-button" onclick="startQuiz('quiz3')">Quiz 3</button>
+
+        <div id="quiz-container"></div>
         </section>
     </body>
 <script src="main.js"></script>
