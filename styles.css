@@ -136,3 +136,39 @@ button:hover {
   background-color: #04AA6D;
   color: white;
 }
+.circle-timer {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.background {
+    stroke: #1e293b;
+}
+
+.progress {
+    stroke: #22c55e;
+    stroke-dasharray: 314; /* 2πr, r=50 */
+    stroke-dashoffset: 0;
+    transition: stroke 0.3s linear, stroke-dashoffset 1s linear;
+}
+
+.time-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
