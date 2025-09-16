@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz 2</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-
-
 </head>
-
 <body>
     <div class="topnav">
         <a class="active" href="/index.html">Peter & Jim</a>
     </div>
-    </section>
+
+    <h1 class="title">Quiz 2</h1>
 
     <section class="invoer-container">
         <h2 class="subtitle_question"></h2>
@@ -28,7 +20,15 @@
         <button type="button" class="answer-button">C: </button>
         <button type="button" class="answer-button">D: </button>
     </section>
-</body>
 
+    <div class="circle-timer">
+        <svg width="120" height="120">
+            <circle class="background" cx="60" cy="60" r="50"></circle>
+            <circle class="progress" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="time-text" id="timeDisplay">30</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
 </html>
-<script src="main.js"></script>
