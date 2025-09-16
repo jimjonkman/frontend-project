@@ -108,16 +108,20 @@ if (quizData.length > 0 && questionElement) {
     showQuestion();
 }
 
-    function saveName() {
+function saveName() {
     const name = document.getElementById('NameInput').value.trim();
+    if (!name) {
+        alert("Vul je naam in!");
+        return;
+    }
     localStorage.setItem('quizName', name);
     location.href = 'thema.html';
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-    const playerNameElement = document.getElementById('playerName');
-    if (playerNameElement) {
-        const name = localStorage.getItem('quizName') || '';
-        playerNameElement.textContent = name;
+    document.addEventListener('DOMContentLoaded', () => {
+            const playerNameElement = document.getElementById('playerName');
+            if (playerNameElement) {
+                const name = localStorage.getItem('quizName') || '';
+                playerNameElement.textContent = name;
+            }
+        });
     }
-});
